@@ -1,6 +1,7 @@
 const dayjs = require("dayjs");
 
-console.log("My Birthday");
+let name = "Hayden";
+console.log(`${name}'s Birthday`);
 console.log(
   dayjs()
     .startOf("year")
@@ -21,7 +22,16 @@ console.log(
 );
 
 import voca from "voca";
-console.log(voca.kebabCase("goodbye blue sky")); // => 'goodbye-blue-sky'
+console.log(voca.camelCase("goodbye blue sky"));
 
-console.log(voca.trim(" Hello World! "));
-console.log(voca.sprintf("%d red %s", 3, "apples"));
+const start = ["do", "re", "mi"];
+const end = ["la", "ti", "da"];
+const scaleFromLiteral = [...start, "fa", "so", ...end];
+console.log(scaleFromLiteral);
+
+let nums = [1, 54, 2, 5, 43];
+let sum = nums.reduce(function (sum, num) {
+  return sum + num;
+}, 0);
+
+console.log(sum);
