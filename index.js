@@ -19,3 +19,9 @@ console.log(
     .set("year", 2023)
     .format("MM-DD-YYYY")
 );
+
+import voca from "voca";
+console.log(voca.kebabCase("goodbye blue sky")); // => 'goodbye-blue-sky'
+
+console.log(voca.trim(" Hello World! "));
+console.log(voca.sprintf("%d red %s", 3, "apples"));
